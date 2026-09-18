@@ -186,6 +186,7 @@ margin-top: 0px;
 background-image: url(img/stone.png);
 background-size: 100px;
 width: 100%;
+overflow: hidden;
 }
 
 .inbox .overlay{
@@ -194,9 +195,36 @@ height: 100%;
 background-color: rgba(0, 0, 0,0.8);
 padding-inline: 20px;
 padding-block: 50px;
+display: flex;
+flex-direction: column;
 }
-.bl{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+
+.intop{
+height: 10px;
+background-image: url(img/dirt.png);
+background-size: 100px 10px;
+filter: brightness(0.4);
+}
+
+.intop2{
+height: 10px;
+background-image: url(img/dirt.png);
+background-size: 100px 10px;
+filter: brightness(0.3);
+clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
+}
+.inbox p {
+    font-family: "Press Start 2P";
+    color: white;
+    font-size: 25px;
+    width: 100%;
+    text-align: justify;
+}
+.inbox h1{
+    font-family: "Press Start 2P";
+    color: white;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 4px 4px 0px black , -4px -4px 0px black, -4px 4px 0px black, 4px -4px 0px black;
 }
