@@ -12,6 +12,7 @@ width: 100%;
 background-image:url(img/grass.png);
 background-size:contain;
 height: 100px;
+z-index: 99;
 }
 
 .nav2{
@@ -20,6 +21,7 @@ background-image:url(img/dirt.png);
 background-size:100px 10px;
 position: sticky;
 top: 100px;
+z-index: 99;
 }
 
 
@@ -144,10 +146,8 @@ justify-content: center;
 
 }
 .cbox{
-
-max-width: 1000px;
+margin-inline:100px;
 min-width: 200px;
-width: 60%;
 
 }
 .tbox{
@@ -164,7 +164,7 @@ width: 100%;
 background-image:url(img/dirt.png);    
 background-size: 100px;
 background-repeat: repeat;
-height: 300px;
+min-height: 300px;
 width: 100%;
 }
 
@@ -197,6 +197,7 @@ padding-inline: 20px;
 padding-block: 50px;
 display: flex;
 flex-direction: column;
+
 }
 
 .intop{
@@ -204,6 +205,7 @@ height: 10px;
 background-image: url(img/dirt.png);
 background-size: 100px 10px;
 filter: brightness(0.4);
+z-index: 1;
 }
 
 .intop2{
@@ -214,11 +216,12 @@ filter: brightness(0.3);
 clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
 }
 .inbox p {
-    font-family: "Press Start 2P";
+    font-family: ;
     color: white;
     font-size: 25px;
     width: 100%;
-    text-align: justify;
+    text-align: left;
+    font-weight: lighter;
 }
 .inbox h1{
     font-family: "Press Start 2P";
