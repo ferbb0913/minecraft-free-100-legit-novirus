@@ -86,8 +86,8 @@ height: 80%;
 width: 100%;
 
 }
-.item{
 
+.item{
 display: flex;
 text-align: center;
 color: white;
@@ -95,18 +95,16 @@ width: fit-content;
 margin-inline:20px ;
 justify-content: center;
 align-items: center;
-
 }
+
 .item:hover{
     filter:brightness(40%);
     transform: scale(0.98);
 }
-.item img{
 
+.item img{
 max-height: 50%;
 max-width: 100%;
-
-
 }
 
 
@@ -143,22 +141,20 @@ background-size: 100px;
 }
 
 .body .overlay{
-
 width: 100%;
 height: 100%;
 padding-block: 100px;
 background-color: rgba(0, 0, 0, 0.9);
 display: flex;
 justify-content: center;
-
 }
+
 .cbox{
 margin-inline:100px;
 min-width: 200px;
-
 }
-.tbox{
 
+.tbox{
 height:100px ;
 background-image:url(img/grass.png);
 background-size: 400px 100px;
@@ -222,13 +218,17 @@ background-size: 100px 10px;
 filter: brightness(0.3);
 clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
 }
+
 .inbox p {
     font-family: mc;
     color: white;
     font-size: 20px;
     width: 100%;
     line-height: 200%;
+    border-bottom: 10px solid rgba(0,0,0,0.4);
+    padding-bottom: 25px;
 }
+
 .inbox h1{
     font-family: mc;
     font-weight: bolder;
@@ -237,7 +237,37 @@ clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
     width: 100%;
     text-align: left;
     text-shadow: 10px 10px 0px black;
-    border-bottom: 10px solid rgba(0,0,0,0.4);
     padding-left: 50px;
-    padding-bottom:30px ;
 }
+
+input[type="radio"] {
+accent-color: rgb(120,120,120);
+border-radius:0px ;
+width: 30px;
+height: 30px;
+margin-bottom: 30px;
+}
+label{
+       font-family: mc;
+    color: white;
+    font-size: 20px;
+    width: 100%; 
+}
+
+fieldset{
+    background-color: rgb(110,110,110);
+    background-size: 100px;
+    border: 5px solid black;
+    box-shadow: inset 5px 5px white;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+fieldset p{
+text-shadow: 4px 4px 0px rgba(0,0,0,0.4);
+}
+fieldset label{
+text-shadow: 4px 4px 0px rgba(0,0,0,0.4);
+}
+
