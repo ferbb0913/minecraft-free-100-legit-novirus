@@ -278,23 +278,45 @@ accent-color: rgb(120,120,120);
 border-radius:0px ;
 width: 30px;
 height: 30px;
-margin-bottom: 30px;
 }
 
 input[type="text"]{
     font-family: mc;
     text-shadow: 3px 3px 0px rgba(0,0,0,0.4);
     font-size: 20px;
-    border: 2.5px solid black;
+    border: 3px solid black;
     color: black;
     outline: none;
     align-self: flex-end;
 
 }
-input[type="text"]:focus{
-    border: 2.5px solid white;
-    border-radius: 0;
+input[type="date"]{
+    font-family: mc;
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.4);
+    font-size: 20px;
+    border: 3px solid black;
+    color: black;
+    outline: none;
+    align-self: flex-end;
+}
+input:focus::placeholder{
+    opacity: 0;
+}
+.cradio{
+    height: 30px;
+    border: 3px, solid, black;
+    width: 30px;
 
+}
+.cradio:hover{
+    background-color: rgb(110,110,110);
+}
+input[type="radio"]{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
 }
 
 
