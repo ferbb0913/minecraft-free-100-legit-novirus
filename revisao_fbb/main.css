@@ -240,13 +240,6 @@ clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
     padding-left: 50px;
 }
 
-input[type="radio"] {
-accent-color: rgb(120,120,120);
-border-radius:0px ;
-width: 30px;
-height: 30px;
-margin-bottom: 30px;
-}
 label{
        font-family: mc;
     color: white;
@@ -262,6 +255,13 @@ fieldset{
     margin: 0;
     padding: 20px;
     box-sizing: border-box;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+fieldset div{
+    display: flex;
+    align-items: center;
 }
 
 fieldset p{
@@ -270,4 +270,31 @@ text-shadow: 4px 4px 0px rgba(0,0,0,0.4);
 fieldset label{
 text-shadow: 4px 4px 0px rgba(0,0,0,0.4);
 }
+
+
+
+input[type="radio"] {
+accent-color: rgb(120,120,120);
+border-radius:0px ;
+width: 30px;
+height: 30px;
+margin-bottom: 30px;
+}
+
+input[type="text"]{
+    font-family: mc;
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.4);
+    font-size: 20px;
+    border: 2.5px solid black;
+    color: black;
+    outline: none;
+    align-self: flex-end;
+
+}
+input[type="text"]:focus{
+    border: 2.5px solid white;
+    border-radius: 0;
+
+}
+
 
