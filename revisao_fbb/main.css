@@ -1,6 +1,7 @@
+
 @font-face {
-  font-family: dogica;
-  src: url(TTF/dogicapixel.ttf); 
+  font-family: mc;
+  src: url(TTF/MinecraftStandard.woff2.woff2); 
 }
 
 
@@ -222,17 +223,21 @@ filter: brightness(0.3);
 clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
 }
 .inbox p {
-    font-family: dogica;
+    font-family: mc;
     color: white;
     font-size: 20px;
     width: 100%;
     line-height: 200%;
 }
 .inbox h1{
-    font-family: "Press Start 2P";
+    font-family: mc;
+    font-weight: bolder;
     color: white;
     font-size: 50px;
     width: 100%;
-    text-align: center;
-    text-shadow: 4px 4px 0px black , -4px -4px 0px black, -4px 4px 0px black, 4px -4px 0px black;
+    text-align: left;
+    text-shadow: 10px 10px 0px black;
+    border-bottom: 10px solid rgba(0,0,0,0.4);
+    padding-left: 50px;
+    padding-bottom:30px ;
 }
