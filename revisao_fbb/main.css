@@ -271,15 +271,6 @@ fieldset label{
 text-shadow: 4px 4px 0px rgba(0,0,0,0.4);
 }
 
-
-
-input[type="radio"] {
-accent-color: rgb(120,120,120);
-border-radius:0px ;
-width: 30px;
-height: 30px;
-}
-
 input[type="text"]{
     font-family: mc;
     text-shadow: 3px 3px 0px rgba(0,0,0,0.4);
@@ -306,11 +297,24 @@ input:focus::placeholder{
     height: 30px;
     border: 3px, solid, black;
     width: 30px;
-
 }
+
 .cradio:hover{
     background-color: rgb(110,110,110);
 }
+.cradio:after {
+  content: "";
+  position: absolute;
+  display: none;
+  width: 70%;
+  height: 70%;
+  background-color: black;
+}
+
+input[type ="radio"]:checked ~ .cradio:after {
+  display: block;
+}
+
 input[type="radio"]{
   position: absolute;
   opacity: 0;
