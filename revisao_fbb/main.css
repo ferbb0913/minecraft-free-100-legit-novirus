@@ -228,6 +228,20 @@ clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
     border-bottom: 10px solid rgba(0,0,0,0.4);
     padding-bottom: 25px;
 }
+.inbox a {
+    font-family: mc;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    line-height: 200%;
+    border-bottom: 10px solid rgba(0,0,0,0.4);
+    padding-bottom: 25px;
+    text-decoration: none;
+}
+.inbox:hover {
+    color: rgb(110,110,110);
+    text-decoration: dashed;
+}
 
 .inbox h1{
     font-family: mc;
