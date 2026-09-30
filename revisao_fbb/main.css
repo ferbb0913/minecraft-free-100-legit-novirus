@@ -293,34 +293,12 @@ input[type="date"]{
 input:focus::placeholder{
     opacity: 0;
 }
-.cradio{
-    height: 30px;
-    border: 3px, solid, black;
-    width: 30px;
-}
-
-.cradio:hover{
-    background-color: rgb(110,110,110);
-}
-.cradio:after {
-  content: "";
-  position: absolute;
-  display: none;
-  width: 70%;
-  height: 70%;
-  background-color: black;
-}
-
-input[type ="radio"]:checked ~ .cradio:after {
-  display: block;
-}
 
 input[type="radio"]{
-  position: absolute;
-  opacity: 0;
   cursor: pointer;
-  height: 100%;
-  width: 100%;
+  height: 40px;
+  width: 40px;
+  accent-color: rgb(110,110,110);
 }
 
 
